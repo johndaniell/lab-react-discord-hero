@@ -1,0 +1,89 @@
+:root {
+  /* Define your font-family and base font properties here */
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* These are your color schemes for light and dark modes */
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #414df1; /* This is the default dark background color */
+
+  /* These properties help with the readability of fonts on various devices */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  /* Anchor tag styles */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  /* Hover state for anchor tags */
+  color: #535bf2;
+}
+
+body {
+  /* Global body styles */
+  font-family: 'Poppins', 'Roboto', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  /* Global button styles */
+  border-radius: 8px;
+  border: none; /* No border as per your design */
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+button:hover {
+  /* Hover state for buttons */
+  font-family: 'Roboto', sans-serif;
+  background-color: #5865f2; /* This is the hover color for the button background */
+  /* You can remove the border-color if you're not using borders in your design */
+}
+
+button:focus,
+button:focus-visible {
+  /* Focus states for accessibility */
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Media query for users who have set a preference for light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  
+  a:hover {
+    color: #747bff;
+  }
+  
+  button {
+    /* You might want to define different button styles for light mode here */
+    background-color: #f9f9f9;
+  }
+}

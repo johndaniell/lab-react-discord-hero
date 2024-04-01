@@ -1,0 +1,134 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+
+  will-change: filter;
+  transition: filter 300ms;
+  height: auto;
+  width: auto; /* Adjust the logo size */
+  max-width: 200px; /* Set a max-width for the logo */
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App {
+  text-align: center;
+  background-color: #2852a1;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  padding: 4em 2em;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 100vh; /* Ensure the div takes full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2em; /* Adjust as per your spacing needs */
+}
+
+.App-content {
+  display :flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.App h1 {
+  color: #fff;
+  font-size: 4rem; /* Adjust font-size as needed */
+  margin-bottom: 1rem; /* Adjust spacing */
+}
+
+.App p {
+  display:flex;
+  flex:1;
+  color: #b9bbbe;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6; /* Adjust line height for better readability */
+  max-width: 600px; /* To make the text not too wide */
+  text-align: start;
+}
+
+.App-buttons {
+  display: flex;
+  flex-direction: column; 
+  align-self: flex-start; 
+}
+
+.App-button-download,
+.App-button-open {
+  font-size: 1rem;
+  padding: 1em 2em;
+  margin: 0.5em 0; /* Adjust the margin to increase space between buttons */
+  /* border: none; */
+  border-radius: 1.2rem;
+  cursor: pointer;
+  transition: background-color 200ms;
+  width: 80%; /* To make the buttons wider */
+  max-width: 300px; /* To prevent them from being too wide on large screens */
+  text-transform: uppercase; /* Make the text uppercase */
+}
+
+.App-footer {
+  height: auto;
+  width: 100%;
+  display:flex;
+  flex:1;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: flex-end;  
+}
+.App-button-download {
+  background-color: #5865f2;
+  color: white;
+}
+
+.App-button-open {
+  background-color: #404EED;
+  color: white;
+}
+
+.App-button-download:hover,
+.App-button-open:hover {
+  filter: brightness(1.1);
+}
+
